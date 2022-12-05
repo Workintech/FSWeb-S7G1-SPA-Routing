@@ -1,0 +1,24 @@
+{
+  "name": "movies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Workintech/FSWeb-S7G1-SPA-Routing"
+  },
+  "author": "Workintech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Workintech/FSWeb-S7G1-SPA-Routing/issues"
+  },
+  "homepage": "hhttps://github.com/Workintech/FSWeb-S7G1-SPA-Routing#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  }
+}
