@@ -5,7 +5,7 @@ Konular:
 * React Router
 * Link ve NavLink kullanarak belirli routelara bağlantı vermek
 * Route Parametreleri Atama
-* Bileşenlere Proplar göndererek Router render etme
+* Componentlere Proplar göndererek Router render etme
 
 ## Talimatlar
 
@@ -13,28 +13,31 @@ Konular:
 
 * [ ] Repoyu **Forklayın** , ve forku klonlayın.
 * [ ] **Not** Çalıştıracağınız 2 server var o yüzden talimatları dikkatlice okuyun.
-* [ ] **Root klasöründe**: `npm install` yazarak bağımlılıkları indirin.
-* [ ] `npm start` ya da `node server.js` komutuyla çalıştırın. (Bu işlemi neden yaptığımız konusunda endişelenmeyin, bu konuyla ilgili ilerleyen adımlarda daha açıklayıcı bilgiler bulacaksın).
-* [ ] Başka bir terminal penceresinde `client` klasörüne girin ve `npm install` yazarak bağımlılıklarını indirin.
+* [ ] **Root klasöründe**: `npm install` yazarak kütüphaneleri indirin.
+* [ ] `npm start` ya da `node server.js` komutuyla çalıştırın. (Bu işlemle ilgili ilerleyen adımlarda daha açıklayıcı bilgiler bulacaksın)
+* [ ] Başka bir terminal penceresinde `client` klasörüne girin ve `npm install` yazarak kütüphaneleri indirin.
 * [ ] `client` klasöründeyken `npm start` yazarak client uygulamasını çalıştırın.
 
-* [ ] Öncelikle uygulamanız client üzerinden çalışmaya başlayınca şuradaki gibi bir tarayıcı penceresi göreceksiniz:  [bknz](./Assets/filmler-anasayfa.png) `localhost:3000` (eğer 3000 kullanılıyorsa port numarası farklı olabilir).
+* [ ] Öncelikle uygulamanız client üzerinden çalışmaya başlayınca şuradaki gibi bir tarayıcı penceresi göreceksiniz:  [bknz](./Assets/filmler-anasayfa.png) `localhost:3000` (eğer 3000 portu boşta değilse 3001 portu kullanılabilir).
 
 ### Görev 2: MVP (MUÜ)
 
-#### Tasarım Dosyaları
+#### Tasarım Görselleri
 
 Uygulamanızı bitirdiğinizde 2 adet route'u olacaktır:
 
 * [ ] [route SS'/'](./Assets/ilk-route.png)
 * [ ] [route SS '/filmler/:id'](./Assets/ikinci-route.png)
 
-#### Routeların uygulanması
+#### Route'ların uygulanması
 
-* [ ] Routerlarla app'i düzenleyin.
-* [ ] App dosyanıza 2 adet route ekleyin.
-  * [ ] birinci route'unuz `/` olacak ve `FilmListesi` bileşenini yükleyecek. Bu bileşene proplarla filmler apisinden alınan datayı aktarın.
-  * [ ] diğer route `/filmler/` parametresinden sonra `id` parametresini alacak  (örnek: `/filmler/2`, `/filmler/3` id dinamik olacak). Bu route `Film` bileşenini yükleyecek.
+[React Router 5 dökümantasyonu](https://v5.reactrouter.com/web/guides/quick-start)
+
+* [ ] App componentine Route eklemek için hazılayın (`<Router>` & `<Switch>`)
+* [ ] App dosyanıza 2 adet route ekleyin. (`<Route ... >`)
+  * [ ] `Route` sıralaması hakkında sorun yaşamamak için `exact` propunu inceleyin: [Route exact prop dökümantasyonu](https://v5.reactrouter.com/web/api/Route/exact-bool)  
+  * [ ] Birinci route'unuz `/` olacak ve `FilmListesi` bileşenini yükleyecek. Bu bileşene proplarla filmler apisinden alınan datayı aktarın.
+  * [ ] Diğer route `/filmler/` parametresinden sonra `id` parametresini alacak (örnek: `/filmler/2`, `/filmler/3`). `id` dinamik olacak. Bu route `Film` bileşenini yükleyecek.
 
 #### İşlevsellik Kazandırın
 
