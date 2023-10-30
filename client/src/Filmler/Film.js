@@ -48,7 +48,7 @@ export default function Film(props) {
           </div>
         ))}
       </div>
-      <div className="save-button">Kaydet</div>
+      <button className="save-button">Kaydet</button>
     </div>
   );
 }
